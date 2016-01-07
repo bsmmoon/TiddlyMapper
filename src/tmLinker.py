@@ -15,9 +15,6 @@ class tmLinker:
             links = list(map(self.getRealLink, links))
             mapper[title] = links
 
-        for key in mapper:
-            print(key + " " + str(mapper[key]))
-
         return mapper
 
     def getRealLink(self, link):
