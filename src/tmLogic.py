@@ -11,6 +11,7 @@ class tmLogic:
         self.storage = tmStorage()
 
     def run(self):
+        fileDirectory = "./data/test.html"
         html = self.reader.run(fileDirectory)
         data = self.parser.run(html)
         self.storage.run(data)
