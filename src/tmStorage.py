@@ -10,9 +10,14 @@ class tmStorage:
         self.writeData(self.fileDirectory, "")
 
     def run(self, data):
+        for key in data:
+            print(key + " " + str(data[key]))
+
         self.ensure_dir(self.dataDir)
         self.ensure_file(self.fileDirectory)
-        # self.appendData(self.fileDirectory, data)
+        for key in data:
+            line = key + ";" + ';'.join(data[key]) + "\n"
+            self.appendData(self.fileDirectory, line)
 
     def ensure_file(self, fileDirectory):
         if not os.path.isfile(fileDirectory):
