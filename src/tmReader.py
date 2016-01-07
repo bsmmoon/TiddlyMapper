@@ -9,5 +9,4 @@ class tmReader:
         with open(fileDirectory, encoding="UTF8") as openfileobject:
             for line in openfileobject:
                 html += line.strip()
-        print(len(html))
         return html

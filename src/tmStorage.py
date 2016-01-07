@@ -12,7 +12,7 @@ class tmStorage:
     def run(self, data):
         self.ensure_dir(self.dataDir)
         self.ensure_file(self.fileDirectory)
-        self.appendData(self.fileDirectory, data)
+        # self.appendData(self.fileDirectory, data)
 
     def ensure_file(self, fileDirectory):
         if not os.path.isfile(fileDirectory):
