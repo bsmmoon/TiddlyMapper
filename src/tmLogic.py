@@ -13,7 +13,7 @@ class tmLogic:
         self.linker = tmLinker()
 
     def run(self):
-        fileDirectory = "./data/test.html"
+        fileDirectory = "./data/mind_palace.htm"
         html = self.reader.run(fileDirectory)
         data = self.parser.run(html)
         data = self.linker.run(data)
