@@ -21,10 +21,6 @@ class tmParser:
             objTiddler["content"] = self.search("(?<=<pre>)(.*?)(?=$)", tiddler)
             tiddlers[i] = objTiddler
 
-        for tiddler in tiddlers:
-            print(tiddler)
-        print("")
-
         return tiddlers
 
     def search(self, regex, text):
